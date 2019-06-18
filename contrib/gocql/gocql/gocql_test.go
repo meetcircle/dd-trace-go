@@ -77,7 +77,7 @@ func TestErrorWrapper(t *testing.T) {
 
 	if iter.Host() != nil {
 		assert.Equal(span.Tag(ext.TargetPort), "9042")
-		assert.Equal(span.Tag(ext.TargetHost), "127.0.0.1")
+		assert.Equal(span.Tag(ext.TargetHost), iter.Host().HostID())
 		assert.Equal(span.Tag(ext.CassandraCluster), "datacenter1")
 	}
 }
@@ -116,7 +116,7 @@ func TestChildWrapperSpan(t *testing.T) {
 	assert.Equal(childSpan.Tag(ext.CassandraKeyspace), "trace")
 	if iter.Host() != nil {
 		assert.Equal(childSpan.Tag(ext.TargetPort), "9042")
-		assert.Equal(childSpan.Tag(ext.TargetHost), "127.0.0.1")
+		assert.Equal(childSpan.Tag(ext.TargetHost), iter.Host().HostID())
 		assert.Equal(childSpan.Tag(ext.CassandraCluster), "datacenter1")
 	}
 }
