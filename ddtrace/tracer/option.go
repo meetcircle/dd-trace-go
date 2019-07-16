@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+	"github.com/meetcircle/dd-trace-go/ddtrace"
+	"github.com/meetcircle/dd-trace-go/ddtrace/ext"
+	"github.com/meetcircle/dd-trace-go/internal/globalconfig"
 )
 
 // config holds the tracer configuration.

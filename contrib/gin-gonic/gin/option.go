@@ -1,6 +1,6 @@
 package gin
 
-import "gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+import "github.com/meetcircle/dd-trace-go/internal/globalconfig"
 
 type config struct {
 	analyticsRate float64

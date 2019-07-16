@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+	"github.com/meetcircle/dd-trace-go/internal/globalconfig"
 )
 
 func withTransport(t transport) StartOption {

@@ -3,8 +3,8 @@ package http
 import (
 	"net/http"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+	"github.com/meetcircle/dd-trace-go/ddtrace"
+	"github.com/meetcircle/dd-trace-go/internal/globalconfig"
 )
 
 type config struct {

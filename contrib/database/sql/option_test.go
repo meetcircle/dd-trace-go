@@ -3,7 +3,7 @@ package sql
 import (
 	"testing"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+	"github.com/meetcircle/dd-trace-go/internal/globalconfig"
 	"gotest.tools/assert"
 )
 

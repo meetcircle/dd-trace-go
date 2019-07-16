@@ -1,5 +1,5 @@
 // Package chi provides tracing functions for tracing the go-chi/chi package (https://github.com/go-chi/chi).
-package chi // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/go-chi/chi"
+package chi // import "github.com/meetcircle/dd-trace-go/contrib/go-chi/chi"
 
 import (
 	"fmt"
@@ -9,9 +9,9 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	"github.com/meetcircle/dd-trace-go/ddtrace"
+	"github.com/meetcircle/dd-trace-go/ddtrace/ext"
+	"github.com/meetcircle/dd-trace-go/ddtrace/tracer"
 )
 
 // Middleware returns middleware that will trace incoming requests.
